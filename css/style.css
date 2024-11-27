@@ -1,0 +1,96 @@
+#wrapper {
+    background-color:blue;
+    display:grid;
+    grid-template-areas:
+    'hd'
+    'mn'
+    'ft'
+    ;
+}
+
+
+
+header {
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom:solid;
+    border-radius:2px;
+    border-style:solid;
+    grid-template-rows:auto auto;
+    grid-template-columns: 50px 1fr;
+    grid-area:hd;
+    display:grid;
+    grid-template-areas:
+    'log nav'
+    ;
+
+}
+
+
+main {
+    background-color:lightblue;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 300px;
+    padding-left:100px;
+    padding-right:100px;
+    grid-area:mn;
+    display:grid;
+    grid-template-areas:
+    'sc1 sc2'
+    'sc3 sc2'
+    ;
+}
+
+footer {
+    grid-area:ft;
+}
+
+
+/* Under ligger alla barn till Main */
+
+
+#section1 {
+    grid-area:sc1;
+    background-color:white;
+}
+
+#section2 {
+    grid-area:sc2;
+    background-color:pink;
+
+}
+
+#section3 {
+    grid-area:sc3;
+    background-color:aqua;
+}
+
+/* Slut */
+
+/* Under ligger alla barn till Header */
+
+#nav1 {
+    grid-area:nav;
+    color:tomato;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#logosec {
+    grid-area:log;
+    color:brown;
+}
+
+
+/* Under ligger id;en */
+
+
+#picturefit {
+    object-fit: fill;
+    width:100%;
+    height:100%;
+}
+
+
+
+/* Slut */
