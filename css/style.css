@@ -1,8 +1,13 @@
 #wrapper {
+
     background-color:blue;
     display:grid;
+    margin-top:100px;
+    grid-template-columns: auto;
+    grid-template-rows: 400px 100px;
+
     grid-template-areas:
-    'hd'
+    /* 'hd' */
     'mn'
     'ft'
     ;
@@ -18,7 +23,9 @@ header {
     border-style:solid;
     grid-template-rows:auto auto;
     grid-template-columns: 50px 1fr;
-    grid-area:hd;
+    width:100%;
+    top:0;
+    position:fixed;
     display:grid;
     grid-template-areas:
     'log nav'
@@ -74,6 +81,14 @@ footer {
     color:tomato;
     display:flex;
     justify-content:space-evenly;
+    align-items:center;
+}
+
+nav a {
+    text-decoration-line:none;
+    font-size:20px;
+    color:white; /*might change*/
+
 }
 
 #logosec {
@@ -84,7 +99,10 @@ footer {
 
 /* Under ligger id;en */
 
-
+#pictureadjust{
+    width:175px;
+    height:100px;
+}
 #picturefit {
     object-fit: fill;
     width:100%;
