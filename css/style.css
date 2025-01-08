@@ -195,7 +195,7 @@ main#MainLogIn {
 #wrapperNyheter {
     margin-top:100px;
     display:grid;
-    background-color:white;
+    background-color:black;
     grid-template-columns: auto;
     grid-template-rows: 1200px 100px;
     grid-template-areas:
@@ -224,7 +224,7 @@ main#MainNyheter {
     grid-area:MnNyheter;
     grid-template-columns: 500px 1fr;
     grid-template-rows: 300px 225px 225px 225px 225px;
-    background-color:white;
+    background-color:black;
     margin-top:none;
     margin-right: none;
     grid-template-areas:
@@ -283,4 +283,8 @@ main#MainNyheter {
     color:aqua;
     margin-top:10px;
     margin-left:10px;
+}
+
+#fontklackar {
+    font-family:
 }
