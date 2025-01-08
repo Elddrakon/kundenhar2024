@@ -81,7 +81,7 @@ footer {
 
 #section3 {
     grid-area:sc3;
-    background-color:aqua;
+    background-color:black;
 }
 
 /* Slut */
@@ -186,4 +186,101 @@ main#MainLogIn {
 .HighLightCurrentWebPage {
     color:white;
     font-size:20px;
+}
+
+/* Slut */
+
+/* Nyhets Sida */
+
+#wrapperNyheter {
+    margin-top:100px;
+    display:grid;
+    background-color:white;
+    grid-template-columns: auto;
+    grid-template-rows: 1200px 100px;
+    grid-template-areas:
+    'MnNyheter'
+    'ftNyheter'
+    ;
+}
+
+footer#FooterNyheter {
+    grid-area:ftNyheter;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color:black;
+    a {
+        color:white;
+        text-decoration:none;
+    }
+    a:hover {
+        text-decoration:dashed;
+    }
+}
+
+
+main#MainNyheter {
+    grid-area:MnNyheter;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 300px 225px 225px 225px 225px;
+    background-color:white;
+    margin-top:none;
+    margin-right: none;
+    grid-template-areas:
+    'bildnyh bildnyh'
+    'secnyh1 secnyh2'
+    'secnyh3 secnyh4'
+    'secnyh5 secnyh6'
+    ;
+}
+
+#secbildNyheter {
+    grid-area: bildnyh;
+    color:blue;
+    background-color:yellow;
+}
+
+#secnyheter1 {
+    grid-area: secnyh1;
+    color:blueviolet;
+    margin-top:50px;
+    margin-right:10px;
+}
+
+#secnyheter2 {
+    grid-area: secnyh2;
+    color:aqua;
+    margin-top:50px;
+    margin-left:10px;
+}
+
+#secnyheter3 {
+    grid-area: secnyh3;
+    color:aqua;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+#secnyheter4 {
+    grid-area: secnyh4;
+    color:aqua;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+
+#secnyheter5 {
+    grid-area: secnyh5;
+    color:aqua;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+
+#secnyheter6 {
+    grid-area: secnyh6;
+    color:aqua;
+    margin-top:10px;
+    margin-left:10px;
 }
